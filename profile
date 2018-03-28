@@ -22,9 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 if [ -e /home/jefdaj/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jefdaj/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-XDG_DESKTOP_DIR="$HOME/incoming"
-XDG_DOCUMENTS_DIR="$HOME/incoming/"
-XDG_DOWNLOAD_DIR="$HOME/incoming/"
-XDG_MUSIC_DIR="$HOME/incoming/"
-XDG_PICTURES_DIR="$HOME/incoming/"
-XDG_VIDEOS_DIR="$HOME/incoming"
+export NIX_PATH=nixpkgs=$HOME/nixpkgs

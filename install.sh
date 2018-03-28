@@ -1,35 +1,34 @@
 #!/usr/bin/env bash
 
 # see https://www.placona.co.uk/1224/linux/managing-your-dotfiles-the-right-way/
+# TODO make the files visible and add a dot when linking
+# TODO once using visible files, can ignore a lot less
+# TODO dir -> dotdir
+# TODO instead of olddir, put them in dotdir with old_ prefix
 
-dir="$HOME/dotfiles"
-olddir="$HOME/scratch/dotfiles_old"
-skipthese=". .. .git .gitignore install.sh"
+dotdir="$HOME/dotfiles"
 
-mkdir -p $olddir
-
-install_link() {
-	[[ "$file" =~ ".sw" ]] && return
-	for skip in $skipthese; do
-		[[ "$file" == "$skip" ]] && return
-	done
-	if [[ -L "$HOME/$file" ]]; then
-		echo "$file already linked"
+install_dotfile_link() {
+	[[ "$1" == "install.sh" || "$1" == *.sw* || "$1" == *.old ]] && return
+	dotfile="${dotdir}/$1"
+	oldfile="${dotfile}.old"
+	dotlink="$HOME/.$1"
+	if [[ -L "$dotlink" ]]; then
+		echo "# skip $dotlink"
 	else
-		if [[ -f "$HOME/$file" ]]; then
-			cmd="mv "$HOME/$file" "$olddir""
+		if [[ -f "$dotlink" ]]; then
+			cmd="mv "$dotlink" "$oldfile""
 			echo "$cmd" && eval "$cmd"
 		fi
-		cmd="ln -fs "$dir/$file" "$HOME/$file""
+		cmd="ln -fs "$dotfile" "$dotlink""
 		echo "$cmd" && eval "$cmd"
 	fi
 }
 
-cd $dir
-ls -a | while read file; do
-	install_link "$file"
+# main
+cd "$dotdir"
+find * -type f | while read dotfile; do
+	install_dotfile_link "$dotfile"
 done
-
 cmd="source $HOME/.bashrc"
 echo "$cmd" && eval "$cmd"
-# source ~/.vimrc
