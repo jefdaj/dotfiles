@@ -4,7 +4,7 @@
 
 dir="$HOME/dotfiles"
 olddir="$HOME/scratch/dotfiles_old"
-skipthese=". .. .git install.sh"
+skipthese=". .. .git .gitignore install.sh"
 
 mkdir -p $olddir
 
