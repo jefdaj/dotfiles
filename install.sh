@@ -13,4 +13,4 @@ done
 
 # install per-host dotfiles
 [[ $(hostname) == agora ]] && show_n_stow firefox
-[[ $(hostname) =~ brc ]] && show_n_stow bash_hpc || stow_n_show bash
+[[ $(hostname) =~ brc ]] && show_n_stow bash_hpc || show_n_stow bash
