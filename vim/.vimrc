@@ -1,5 +1,5 @@
 " general
-colorscheme elflord
+colorscheme default
 set number
 set nofoldenable
 set nocompatible
