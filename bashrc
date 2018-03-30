@@ -118,3 +118,5 @@ fi
 
 ssh-add $HOME/.ssh/github_$(hostname)_rsa
 ssh-add $HOME/.ssh/bitbucket_$(hostname)_rsa
+
+export EDITOR=vim
