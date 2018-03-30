@@ -9,7 +9,7 @@
 dotdir="$HOME/dotfiles"
 
 install_dotfile_link() {
-	[[ "$1" == "install.sh" || "$1" == *.sw* || "$1" == *.old ]] && return
+	[[ "$1" == "install.sh" || "$1" == "readme.md" || "$1" == *.sw* || "$1" == *.old ]] && return
 	dotfile="${dotdir}/$1"
 	oldfile="${dotfile}.old"
 	dotlink="$HOME/.$1"
