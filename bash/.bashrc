@@ -121,3 +121,5 @@ ssh-add $HOME/.ssh/bitbucket_$(hostname)_rsa
 export EDITOR=vim
 export NIX_PATH=nixpkgs=$HOME/nixpkgs
 export PATH=$HOME/bin:$PATH
+
+mkdir -p $HOME/.local/share/Trash/files
