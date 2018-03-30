@@ -8,6 +8,7 @@ syntax on
 filetype plugin indent on
 
 " jeffwiki
+autocmd BufNewFile,BufRead *.md   set filetype=pandoc
 autocmd BufNewFile,BufRead *.page set filetype=pandoc
 
 " cut scripts look kind of ok with python highlighting

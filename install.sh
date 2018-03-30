@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
+SPECIAL="bash bash_hpc readme.md install.sh firefox"
 show_n_stow() { cmd="stow --verbose '$1'"; echo "$cmd"; eval "$cmd"; }
-SPECIAL="readme.md install.sh firefox"
 
 # go to dotfiles dir
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -13,3 +13,4 @@ done
 
 # install per-host dotfiles
 [[ $(hostname) == agora ]] && show_n_stow firefox
+[[ $(hostname) =~ brc ]] && show_n_stow bash_hpc || stow_n_show bash
