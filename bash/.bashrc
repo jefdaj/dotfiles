@@ -115,8 +115,8 @@ if ! shopt -oq posix; then
 fi
 
 # custom (everything above is ubuntu defaults)
-ssh-add $HOME/.ssh/github_$(hostname)_rsa
-ssh-add $HOME/.ssh/bitbucket_$(hostname)_rsa
+# ssh-add $HOME/.ssh/github_$(hostname)_rsa
+# ssh-add $HOME/.ssh/bitbucket_$(hostname)_rsa
 . $HOME/.nix-profile/etc/profile.d/nix.sh
 export EDITOR=vim
 export NIX_PATH=nixpkgs=$HOME/nixpkgs
