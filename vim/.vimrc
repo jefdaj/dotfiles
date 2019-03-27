@@ -11,8 +11,8 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.md   set filetype=pandoc
 autocmd BufNewFile,BufRead *.page set filetype=pandoc
 
-" rrr scripts look decent with python highlighting
-autocmd BufNewFile,BufRead *.rrr set filetype=python
+" cut scripts look decent with python highlighting
+autocmd BufNewFile,BufRead *.cut set filetype=python
 
 " gvim
 if has("gui_running")
