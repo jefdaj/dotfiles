@@ -115,11 +115,20 @@ if ! shopt -oq posix; then
 fi
 
 # custom (everything above is ubuntu defaults)
-ssh-add $HOME/.ssh/github_$(hostname)_rsa
-ssh-add $HOME/.ssh/bitbucket_$(hostname)_rsa
-. $HOME/.nix-profile/etc/profile.d/nix.sh
+# . $HOME/.nix-profile/etc/profile.d/nix.sh
 export EDITOR=vim
 export NIX_PATH=nixpkgs=$HOME/nixpkgs
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/syncthing-linux-amd64-v1.1.3:$PATH
 
 mkdir -p $HOME/.local/share/Trash/files
+
+# TODO every shell or just login ones?
+pgrep ssh-agent &> /dev/null || eval `ssh-agent -s`
+# eval `ssh-agent -s` &
+ssh-add $HOME/.ssh/github_rsa    &> /dev/null
+ssh-add $HOME/.ssh/bitbucket_rsa &> /dev/null
+
+export TMPDIR=/mnt/scratch/tmp
+
+[[ -z $TMUX ]] && (tmux attach || tmux new-session -A -s main)

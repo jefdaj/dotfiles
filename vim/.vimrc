@@ -1,4 +1,5 @@
 " general
+set tabstop=2
 colorscheme default
 set number
 set nofoldenable
@@ -11,8 +12,8 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.md   set filetype=pandoc
 autocmd BufNewFile,BufRead *.page set filetype=pandoc
 
-" cut scripts look kind of ok with python highlighting
-autocmd BufNewFile,BufRead *.cut set filetype=python
+" ol scripts look kind of ok with python highlighting
+autocmd BufNewFile,BufRead *.ol set filetype=python
 
 " gvim
 if has("gui_running")
@@ -21,3 +22,8 @@ endif
 if has('clipboard')
 	set clipboard=unnamedplus
 endif
+
+" use unicode by default
+set enc=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf8,prc
