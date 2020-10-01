@@ -131,4 +131,10 @@ ssh-add $HOME/.ssh/bitbucket_rsa &> /dev/null
 
 export TMPDIR=/mnt/scratch/tmp
 
-[[ -z $TMUX ]] && (tmux attach || tmux new-session -A -s main)
+#[[ -z $TMUX ]] && (tmux attach || tmux new-session -A -s main)
+
+# git branch in prompt
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
