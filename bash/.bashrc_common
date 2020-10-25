@@ -1,0 +1,9 @@
+export EDITOR=vim
+
+# TODO where should this go?
+rsync-safe() { rsync -avxHAX --info=progress2 "$1"/ "$2"/ && rsync -avxHAX --info=progress2 --checksum --remove-source-files "$1"/ "$2"/; }
+
+# TODO make sure the agent starts on login if not using nixos
+for f in $HOME/.ssh/*_rsa; do
+  ssh-add "$f" 2> /dev/null
+done
