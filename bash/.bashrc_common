@@ -7,3 +7,5 @@ rsync-safe() { rsync -avxHAX --info=progress2 "$1"/ "$2"/ && rsync -avxHAX --inf
 for f in $HOME/.ssh/*_rsa; do
   ssh-add "$f" 2> /dev/null
 done
+
+export PATH=$HOME/.local/bin:$PATH
