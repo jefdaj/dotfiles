@@ -1,0 +1,106 @@
+#############
+# ortholang #
+#############
+
+[ortholang/blastdbget]
+checkout = git clone 'git@github.com:jefdaj/blastdbget' 'blastdbget'
+
+[ortholang/diamond-nix]
+checkout = git clone 'git@github.com:jefdaj/diamond-nix' 'diamond-nix'
+
+[ortholang/easel-nix]
+checkout = git clone 'git@github.com:jefdaj/easel-nix' 'easel-nix'
+
+[ortholang/hmmer-nix]
+checkout = git clone 'git@github.com:jefdaj/hmmer-nix' 'hmmer-nix'
+
+[ortholang/logging]
+checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
+
+[ortholang/mmseqs2-nix]
+checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
+
+[ortholang/orthofinder-nix]
+checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
+
+[ortholang/ortholang]
+checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
+
+[ortholang/ortholang-demo]
+checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
+
+[ortholang/ortholang_kernel]
+checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
+
+[ortholang/treecl-nix]
+checkout = git clone 'git@github.com:jefdaj/treecl-nix' 'treecl-nix'
+
+[ortholang/docopt.hs]
+checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
+
+#########
+# knlab #
+#########
+
+[knlab/jeffwiki]
+checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
+
+[knlab/papers]
+checkout = git clone 'git@bitbucket.org:jefdaj/papers.git' 'papers'
+
+[knlab/pges]
+checkout = git clone 'git@github.com:jefdaj/pges' 'pges'
+
+[knlab/knlab-nixops]
+checkout = git clone 'git@bitbucket.com:jefdaj/knlab-nixops' 'knlab-nixops'
+
+[knlab/nix-no-root]
+checkout = git clone 'git@github.com:jefdaj/nix-no-root' 'nix-no-root'
+
+[knlab/nix-slurm-config]
+checkout = git clone 'git@github.com:jefdaj/nix-slurm-config' 'nix-slurm-config'
+
+[knlab/qrlabels]
+checkout = git clone 'git@github.com:jefdaj/qrlabels' 'qrlabels'
+
+[knlab/labwiki]
+checkout = git clone 'git@github.com:jefdaj/labwiki' 'labwiki'
+
+[knlab/tnseq7942-hl]
+checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-hl' 'tnseq7942-hl'
+
+[knlab/tnseq7942-fl]
+checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-fl' 'tnseq7942-fl'
+
+[knlab/future-sra-archives]
+checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/future-sra-archives' 'future-sra-archives'
+
+##########
+# github #
+##########
+
+[github/dotfiles]
+checkout = git clone 'git@github.com:jefdaj/dotfiles' 'dotfiles'
+
+[github/filestore]
+checkout = git clone 'git@github.com:jefdaj/filestore' 'filestore'
+
+[github/gander]
+checkout = git clone 'git@github.com:jefdaj/gander' 'gander'
+
+[github/gitit]
+checkout = git clone 'git@github.com:jefdaj/gitit' 'gitit'
+
+[github/horcrux]
+checkout = git clone 'git@github.com:jefdaj/horcrux' 'horcrux'
+
+[github/nixpkgs]
+checkout = git clone 'git@github.com:jefdaj/nixpkgs' 'nixpkgs'
+
+[github/star-vote]
+checkout = git clone 'git@github.com:jefdaj/star-vote' 'star-vote'
+
+#############
+# bitbucket #
+#############
+
