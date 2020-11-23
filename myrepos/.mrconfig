@@ -5,6 +5,9 @@
 [ortholang/blastdbget]
 checkout = git clone 'git@github.com:jefdaj/blastdbget' 'blastdbget'
 
+[ortholang/busco-nix]
+checkout = git clone 'git@github.com:jefdaj/busco-nix' 'busco-nix'
+
 [ortholang/diamond-nix]
 checkout = git clone 'git@github.com:jefdaj/diamond-nix' 'diamond-nix'
 
@@ -20,6 +23,9 @@ checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
 [ortholang/mmseqs2-nix]
 checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
 
+[ortholang/sonicparanoid2-nix]
+checkout = git clone 'git@github.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
+
 [ortholang/orthofinder-nix]
 checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
 
@@ -28,6 +34,9 @@ checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
 
 [ortholang/ortholang-demo]
 checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
+
+[ortholang/ortholang-userdata]
+checkout = git clone 'ssh://zilputer//mnt/data/ortholang-userdata' 'ortholang-userdata'
 
 [ortholang/ortholang_kernel]
 checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
@@ -105,6 +114,9 @@ checkout = git clone 'git@github.com:jefdaj/python-javabridge' 'python-javabridg
 
 [github/CellProfiler]
 checkout = git clone 'git@github.com:jefdaj/CellProfiler' 'CellProfiler'
+
+[github/barcodes-code128]
+checkout = git clone 'git@github.com:jefdaj/barcodes-code128' 'barcodes-code128'
 
 #############
 # bitbucket #
