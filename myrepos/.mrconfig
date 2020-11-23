@@ -51,6 +51,9 @@ checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
 # knlab #
 #########
 
+[knlab/asciicasts]
+checkout = git clone 'ssh://zilputer//home/jefdaj/asciicasts' 'asciicasts'
+
 [knlab/jeffwiki]
 checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
 
