@@ -29,6 +29,9 @@ checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
 [ortholang/ortholang-demo]
 checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
 
+[ortholang/ortholang-userdata]
+checkout = git clone 'ssh://zilputer//mnt/data/ortholang-userdata' 'ortholang-userdata'
+
 [ortholang/ortholang_kernel]
 checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
 
