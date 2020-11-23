@@ -100,6 +100,12 @@ checkout = git clone 'git@github.com:jefdaj/nixpkgs' 'nixpkgs'
 [github/star-vote]
 checkout = git clone 'git@github.com:jefdaj/star-vote' 'star-vote'
 
+[github/python-javabridge]
+checkout = git clone 'git@github.com:jefdaj/python-javabridge' 'python-javabridge'
+
+[github/CellProfiler]
+checkout = git clone 'git@github.com:jefdaj/CellProfiler' 'CellProfiler'
+
 #############
 # bitbucket #
 #############
