@@ -78,6 +78,18 @@ checkout = git clone 'git@github.com:jefdaj/qrlabels' 'qrlabels'
 [knlab/labwiki]
 checkout = git clone 'git@github.com:jefdaj/labwiki' 'labwiki'
 
+[knlab/shortcut-paper]
+checkout = git clone 'git@bitbucket.com:jefdaj/shortcut-paper' 'shortcut-paper'
+
+[knlab/tnseq7942-paper]
+checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-paper' 'tnseq7942-paper'
+
+# [knlab/tnseq7942]
+# checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942' 'tnseq7942'
+
+# [knlab/tnseq7942v2]
+# checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942v2' 'tnseq7942v2'
+
 [knlab/tnseq7942-hl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-hl' 'tnseq7942-hl'
 
