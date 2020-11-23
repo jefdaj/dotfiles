@@ -5,6 +5,9 @@
 [ortholang/blastdbget]
 checkout = git clone 'git@github.com:jefdaj/blastdbget' 'blastdbget'
 
+[ortholang/busco-nix]
+checkout = git clone 'git@github.com:jefdaj/busco-nix' 'busco-nix'
+
 [ortholang/diamond-nix]
 checkout = git clone 'git@github.com:jefdaj/diamond-nix' 'diamond-nix'
 
@@ -19,6 +22,9 @@ checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
 
 [ortholang/mmseqs2-nix]
 checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
+
+[ortholang/sonicparanoid2-nix]
+checkout = git clone 'git@github.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
 
 [ortholang/orthofinder-nix]
 checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
@@ -102,6 +108,9 @@ checkout = git clone 'git@github.com:jefdaj/nixpkgs' 'nixpkgs'
 
 [github/star-vote]
 checkout = git clone 'git@github.com:jefdaj/star-vote' 'star-vote'
+
+[github/barcodes-code128]
+checkout = git clone 'git@github.com:jefdaj/barcodes-code128' 'barcodes-code128'
 
 #############
 # bitbucket #
