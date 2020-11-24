@@ -64,6 +64,11 @@ sync = git annex sync && git annex sync --content
 checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
 sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
 
+# TODO did i put it on github already? if not, maybe do it when the papers are done
+[knlab/dissertation]
+checkout = git clone 'git@bitbucket.org:jefdaj/dissertation.git' 'dissertation'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+
 [knlab/papers]
 checkout = git clone 'git@bitbucket.org:jefdaj/papers.git' 'papers'
 
