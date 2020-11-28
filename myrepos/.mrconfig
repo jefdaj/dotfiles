@@ -1,115 +1,155 @@
+[DEFAULT]
+sync = echo "no sync command set up"
+
 #############
 # ortholang #
 #############
 
-[ortholang/blastdbget]
+[myrepos/ortholang/blastdbget]
 checkout = git clone 'git@github.com:jefdaj/blastdbget' 'blastdbget'
 
-[ortholang/busco-nix]
+[myrepos/ortholang/busco-nix]
 checkout = git clone 'git@github.com:jefdaj/busco-nix' 'busco-nix'
 
-[ortholang/diamond-nix]
+[myrepos/ortholang/diamond-nix]
 checkout = git clone 'git@github.com:jefdaj/diamond-nix' 'diamond-nix'
 
-[ortholang/easel-nix]
+[myrepos/ortholang/easel-nix]
 checkout = git clone 'git@github.com:jefdaj/easel-nix' 'easel-nix'
 
-[ortholang/hmmer-nix]
+[myrepos/ortholang/hmmer-nix]
 checkout = git clone 'git@github.com:jefdaj/hmmer-nix' 'hmmer-nix'
 
-[ortholang/logging]
+[myrepos/ortholang/logging]
 checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
 
-[ortholang/mmseqs2-nix]
+[myrepos/ortholang/mmseqs2-nix]
 checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
 
-[ortholang/sonicparanoid2-nix]
+[myrepos/ortholang/sonicparanoid2-nix]
 checkout = git clone 'git@github.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
 
-[ortholang/orthofinder-nix]
+[myrepos/ortholang/orthofinder-nix]
 checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
 
-[ortholang/ortholang]
+[myrepos/ortholang/ortholang]
 checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
 
-[ortholang/ortholang-demo]
+[myrepos/ortholang/ortholang-demo]
 checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
 
-[ortholang/ortholang-userdata]
+[myrepos/ortholang/ortholang-userdata]
 checkout = git clone 'ssh://zilputer//mnt/data/ortholang-userdata' 'ortholang-userdata'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
 
-[ortholang/ortholang_kernel]
+[myrepos/ortholang/ortholang_kernel]
 checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
 
-[ortholang/treecl-nix]
+[myrepos/ortholang/treecl-nix]
 checkout = git clone 'git@github.com:jefdaj/treecl-nix' 'treecl-nix'
 
 #########
 # knlab #
 #########
 
-[knlab/jeffwiki]
-checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
+[myrepos/knlab/asciicasts]
+checkout = git clone 'ssh://zilputer//home/jefdaj/asciicasts' 'asciicasts'
+sync = git annex sync && git annex sync --content
 
-[knlab/papers]
+# TODO what to do when bitbucket needs merging?
+[myrepos/knlab/jeffwiki]
+checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+
+# TODO did i put it on github already? if not, maybe do it when the papers are done
+[myrepos/knlab/dissertation]
+checkout = git clone 'git@bitbucket.org:jefdaj/dissertation.git' 'dissertation'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+
+[myrepos/knlab/papers]
 checkout = git clone 'git@bitbucket.org:jefdaj/papers.git' 'papers'
 
-[knlab/pges]
+[myrepos/knlab/pges]
 checkout = git clone 'git@github.com:jefdaj/pges' 'pges'
 
-[knlab/knlab-nixops]
+[myrepos/knlab/knlab-nixops]
 checkout = git clone 'git@bitbucket.com:jefdaj/knlab-nixops' 'knlab-nixops'
 
-[knlab/nix-no-root]
+[myrepos/knlab/nix-no-root]
 checkout = git clone 'git@github.com:jefdaj/nix-no-root' 'nix-no-root'
 
-[knlab/nix-slurm-config]
+[myrepos/knlab/nix-slurm-config]
 checkout = git clone 'git@github.com:jefdaj/nix-slurm-config' 'nix-slurm-config'
 
-[knlab/qrlabels]
+[myrepos/knlab/qrlabels]
 checkout = git clone 'git@github.com:jefdaj/qrlabels' 'qrlabels'
 
-[knlab/labwiki]
+[myrepos/knlab/labwiki]
 checkout = git clone 'git@github.com:jefdaj/labwiki' 'labwiki'
 
-[knlab/tnseq7942-hl]
+# TODO rename ortholang-paper
+[myrepos/knlab/shortcut-paper]
+checkout = git clone 'git@bitbucket.com:jefdaj/shortcut-paper' 'shortcut-paper'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+
+# TODO rename tnseq-paper
+[myrepos/knlab/tnseq7942-paper]
+checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-paper' 'tnseq7942-paper'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+
+# [knlab/tnseq7942]
+# checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942' 'tnseq7942'
+
+# [knlab/tnseq7942v2]
+# checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942v2' 'tnseq7942v2'
+
+[myrepos/knlab/tnseq7942-hl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-hl' 'tnseq7942-hl'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
 
-[knlab/tnseq7942-fl]
+[myrepos/knlab/tnseq7942-fl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-fl' 'tnseq7942-fl'
+sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
 
-[knlab/future-sra-archives]
+[myrepos/knlab/future-sra-archives]
 checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/future-sra-archives' 'future-sra-archives'
+sync = git annex sync && git annex sync --content
 
 ##########
 # github #
 ##########
 
-[github/docopt.hs]
+[myrepos/github/docopt.hs]
 checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
 
-[github/dotfiles]
+[myrepos/github/dotfiles]
 checkout = git clone 'git@github.com:jefdaj/dotfiles' 'dotfiles'
 
-[github/filestore]
+[myrepos/github/filestore]
 checkout = git clone 'git@github.com:jefdaj/filestore' 'filestore'
 
-[github/gander]
+[myrepos/github/gander]
 checkout = git clone 'git@github.com:jefdaj/gander' 'gander'
 
-[github/gitit]
+[myrepos/github/gitit]
 checkout = git clone 'git@github.com:jefdaj/gitit' 'gitit'
 
-[github/horcrux]
+[myrepos/github/horcrux]
 checkout = git clone 'git@github.com:jefdaj/horcrux' 'horcrux'
 
-[github/nixpkgs]
+[myrepos/github/nixpkgs]
 checkout = git clone 'git@github.com:jefdaj/nixpkgs' 'nixpkgs'
 
-[github/star-vote]
+[myrepos/github/star-vote]
 checkout = git clone 'git@github.com:jefdaj/star-vote' 'star-vote'
 
-[github/barcodes-code128]
+[myrepos/github/python-javabridge]
+checkout = git clone 'git@github.com:jefdaj/python-javabridge' 'python-javabridge'
+
+[myrepos/github/CellProfiler]
+checkout = git clone 'git@github.com:jefdaj/CellProfiler' 'CellProfiler'
+
+[myrepos/github/barcodes-code128]
 checkout = git clone 'git@github.com:jefdaj/barcodes-code128' 'barcodes-code128'
 
 #############
