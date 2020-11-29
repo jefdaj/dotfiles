@@ -39,8 +39,8 @@ checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
 checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
 
 [myrepos/ortholang/ortholang-userdata]
-checkout = git clone 'ssh://zilputer//mnt/data/ortholang-userdata' 'ortholang-userdata'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/myrepos/ortholang/ortholang-userdata' 'ortholang-userdata'
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 [myrepos/ortholang/ortholang_kernel]
 checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
@@ -48,26 +48,23 @@ checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
 [myrepos/ortholang/treecl-nix]
 checkout = git clone 'git@github.com:jefdaj/treecl-nix' 'treecl-nix'
 
-[myrepos/ortholang/docopt.hs]
-checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
-
 #########
 # knlab #
 #########
 
 [myrepos/knlab/asciicasts]
-checkout = git clone 'ssh://zilputer//home/jefdaj/asciicasts' 'asciicasts'
-sync = git annex sync && git annex sync --content
+checkout = git clone 'ssh://zilputer//home/jefdaj/myrepos/knlab/asciicasts' 'asciicasts'
+sync = git annex sync && git annex sync --content --jobs 8
 
 # TODO what to do when bitbucket needs merging?
 [myrepos/knlab/jeffwiki]
 checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 # TODO did i put it on github already? if not, maybe do it when the papers are done
 [myrepos/knlab/dissertation]
 checkout = git clone 'git@bitbucket.org:jefdaj/dissertation.git' 'dissertation'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 [myrepos/knlab/papers]
 checkout = git clone 'git@bitbucket.org:jefdaj/papers.git' 'papers'
@@ -93,12 +90,12 @@ checkout = git clone 'git@github.com:jefdaj/labwiki' 'labwiki'
 # TODO rename ortholang-paper
 [myrepos/knlab/shortcut-paper]
 checkout = git clone 'git@bitbucket.com:jefdaj/shortcut-paper' 'shortcut-paper'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 # TODO rename tnseq-paper
 [myrepos/knlab/tnseq7942-paper]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-paper' 'tnseq7942-paper'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 # [knlab/tnseq7942]
 # checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942' 'tnseq7942'
@@ -108,19 +105,22 @@ sync = git pull bitbucket && git push bitbucket && git annex sync && git annex s
 
 [myrepos/knlab/tnseq7942-hl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-hl' 'tnseq7942-hl'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 [myrepos/knlab/tnseq7942-fl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-fl' 'tnseq7942-fl'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 [myrepos/knlab/future-sra-archives]
-checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/future-sra-archives' 'future-sra-archives'
-sync = git annex sync && git annex sync --content
+checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/myrepos/knlab/future-sra-archives' 'future-sra-archives'
+sync = git annex sync && git annex sync --content --jobs 8
 
 ##########
 # github #
 ##########
+
+[myrepos/github/docopt.hs]
+checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
 
 [myrepos/github/dotfiles]
 checkout = git clone 'git@github.com:jefdaj/dotfiles' 'dotfiles'
