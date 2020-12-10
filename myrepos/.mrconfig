@@ -40,7 +40,7 @@ checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
 
 [myrepos/ortholang/ortholang-userdata]
 checkout = git clone 'ssh://zilputer//mnt/data/ortholang-userdata' 'ortholang-userdata'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 [myrepos/ortholang/ortholang_kernel]
 checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
@@ -62,12 +62,7 @@ sync = git annex sync && git annex sync --content
 # TODO what to do when bitbucket needs merging?
 [myrepos/knlab/jeffwiki]
 checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
-
-# TODO did i put it on github already? if not, maybe do it when the papers are done
-[myrepos/knlab/dissertation]
-checkout = git clone 'git@bitbucket.org:jefdaj/dissertation.git' 'dissertation'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 [myrepos/knlab/papers]
 checkout = git clone 'git@bitbucket.org:jefdaj/papers.git' 'papers'
@@ -93,12 +88,12 @@ checkout = git clone 'git@github.com:jefdaj/labwiki' 'labwiki'
 # TODO rename ortholang-paper
 [myrepos/knlab/shortcut-paper]
 checkout = git clone 'git@bitbucket.com:jefdaj/shortcut-paper' 'shortcut-paper'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 # TODO rename tnseq-paper
 [myrepos/knlab/tnseq7942-paper]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-paper' 'tnseq7942-paper'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 # [knlab/tnseq7942]
 # checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942' 'tnseq7942'
@@ -108,11 +103,11 @@ sync = git pull bitbucket && git push bitbucket && git annex sync && git annex s
 
 [myrepos/knlab/tnseq7942-hl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-hl' 'tnseq7942-hl'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 [myrepos/knlab/tnseq7942-fl]
 checkout = git clone 'git@bitbucket.com:jefdaj/tnseq7942-fl' 'tnseq7942-fl'
-sync = git pull bitbucket && git push bitbucket && git annex sync && git annex sync --content
+sync = git pull origin && git push origin && git annex sync && git annex sync --content
 
 [myrepos/knlab/future-sra-archives]
 checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/future-sra-archives' 'future-sra-archives'
@@ -156,3 +151,8 @@ checkout = git clone 'git@github.com:jefdaj/barcodes-code128' 'barcodes-code128'
 # bitbucket #
 #############
 
+[myrepos/bitbucket/newsbet]
+checkout = git clone 'git@bitbucket.org:jefdaj/newsbet' 'newsbet'
+
+[myrepos/bitbucket/social-network-cleaner]
+checkout = git clone 'git@bitbucket.org:jefdaj/social-network-cleaner' 'social-network-cleaner'
