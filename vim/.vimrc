@@ -1,7 +1,8 @@
 " general
 set tabstop=2
 colorscheme default
-set number
+" set number
+set ruler " row, column number of cursor
 set nofoldenable
 set nocompatible
 execute pathogen#infect()
