@@ -27,7 +27,7 @@ checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
 checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
 
 [myrepos/ortholang/sonicparanoid2-nix]
-checkout = git clone 'git@github.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
+checkout = git clone 'git@gitlab.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
 
 [myrepos/ortholang/orthofinder-nix]
 checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
@@ -59,11 +59,6 @@ sync = git annex sync && git annex sync --content --jobs 8
 # TODO what to do when bitbucket needs merging?
 [myrepos/knlab/jeffwiki]
 checkout = git clone 'git@bitbucket.org:jefdaj/jeffwiki.git' 'jeffwiki'
-sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
-
-# TODO did i put it on github already? if not, maybe do it when the papers are done
-[myrepos/knlab/dissertation]
-checkout = git clone 'git@bitbucket.org:jefdaj/dissertation.git' 'dissertation'
 sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
 
 [myrepos/knlab/papers]
@@ -156,3 +151,8 @@ checkout = git clone 'git@github.com:jefdaj/barcodes-code128' 'barcodes-code128'
 # bitbucket #
 #############
 
+[myrepos/bitbucket/newsbet]
+checkout = git clone 'git@bitbucket.org:jefdaj/newsbet' 'newsbet'
+
+[myrepos/bitbucket/social-network-cleaner]
+checkout = git clone 'git@bitbucket.org:jefdaj/social-network-cleaner' 'social-network-cleaner'
