@@ -7,15 +7,19 @@ set nofoldenable
 set nocompatible
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
+filetype plugin indent on " pfplugin files are loaded here?
 
-" jeffwiki, and other markdown
-autocmd BufNewFile,BufRead *.md   set filetype=markdown.pandoc
-autocmd BufNewFile,BufRead *.page set filetype=markdown.pandoc
+"set verbose=9 " for testing
+augroup vimrc
+  " jeffwiki, and other markdown
+	" note that .md files are also overridden in after/ftplugin/vimwiki.vim
+  autocmd BufNewFile,BufRead *.md   set filetype=markdown.pandoc
+  autocmd BufNewFile,BufRead *.page set filetype=markdown.pandoc
 
-" ortholang scripts look ok with python highlighting
-autocmd BufNewFile,BufRead *.ol  set filetype=python
-autocmd BufNewFile,BufRead *.cut set filetype=python
+  " ortholang scripts look ok with python highlighting
+  autocmd BufNewFile,BufRead *.ol  set filetype=python
+  autocmd BufNewFile,BufRead *.cut set filetype=python
+augroup END
 
 " gvim
 if has("gui_running")
