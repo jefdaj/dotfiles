@@ -5,48 +5,154 @@ sync = echo "no sync command set up"
 # ortholang #
 #############
 
-[myrepos/ortholang/blastdbget]
-checkout = git clone 'git@github.com:jefdaj/blastdbget' 'blastdbget'
+[myrepos/ortholang/blastdbget-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/blastdbget-nix' blastdbget-nix;
+  git -C blastdbget-nix remote add brwnj 'https://github.com/brwnj/blastdbget';
+  git -C blastdbget-nix fetch --all --prune
 
-[myrepos/ortholang/busco-nix]
-checkout = git clone 'git@github.com:jefdaj/busco-nix' 'busco-nix'
+[myrepos/ortholang/cdhit-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/cdhit-nix' cdhit-nix;
+  git -C cdhit-nix remote add weizhongli 'https://github.com/weizhongli/cdhit';
+  git -C cdhit-nix fetch --all --prune
 
 [myrepos/ortholang/diamond-nix]
-checkout = git clone 'git@github.com:jefdaj/diamond-nix' 'diamond-nix'
+checkout = \
+  git clone 'git@github.com:jefdaj/diamond-nix' diamond-nix;
+  git -C diamond-nix remote add bbuchfink 'https://github.com/bbuchfink/diamond';
+  git -C diamond-nix fetch --all --prune
 
 [myrepos/ortholang/easel-nix]
-checkout = git clone 'git@github.com:jefdaj/easel-nix' 'easel-nix'
+checkout = \
+  git clone 'git@github.com:jefdaj/easel-nix' easel-nix;
+  git -C easel-nix remote add EddyRivasLab 'https://github.com/EddyRivasLab/easel';
+  git -C easel-nix fetch --all --prune
 
 [myrepos/ortholang/hmmer-nix]
-checkout = git clone 'git@github.com:jefdaj/hmmer-nix' 'hmmer-nix'
+checkout = \
+  git clone 'git@github.com:jefdaj/hmmer-nix' hmmer-nix;
+  git -C hmmer-nix remote add EddyRivasLab 'https://github.com/EddyRivasLab/hmmer';
+  git -C hmmer-nix fetch --all --prune
 
+# TODO suffix repo with -hs?
 [myrepos/ortholang/logging]
-checkout = git clone 'git@github.com:jefdaj/logging' 'logging'
+checkout = \
+  git clone 'git@github.com:jefdaj/logging' logging;
+  git -C logging remote add jwiegley 'https://github.com/jwiegley/logging';
+  git -C logging fetch --all --prune
+
+[myrepos/ortholang/crb-blast-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/crb-blast-nix' crb-blast-nix;
+  git -C crb-blast-nix remote add cboursnell 'https://github.com/cboursnell/crb-blast';
+  git -C crb-blast-nix fetch --all --prune
+
+[myrepos/ortholang/justorthologs-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/justorthologs-nix' justorthologs-nix;
+  git -C justorthologs-nix remote add ridgelab 'https://github.com/ridgelab/JustOrthologs';
+  git -C justorthologs-nix fetch --all --prune
 
 [myrepos/ortholang/mmseqs2-nix]
-checkout = git clone 'git@github.com:jefdaj/mmseqs2-nix' 'mmseqs2-nix'
+checkout = \
+  git clone 'git@github.com:jefdaj/mmseqs2-nix' mmseqs2-nix;
+  git -C mmseqs2-nix remote add soedinglab 'https://github.com/soedinglab/mmseqs2';
+  git -C mmseqs2-nix fetch --all --prune
+
+[myrepos/ortholang/busco-nix]
+checkout = \
+  git clone 'git@gitlab.com:jefdaj/busco' busco-nix
+  git -C busco-nix remote add ezlab 'https://gitlab.com/ezlab/busco.git';
+  git -C busco-nix fetch --all --prune
+
+[myrepos/ortholang/quick-multi-paranoid-nix]
+checkout = \
+  git clone 'git@gitlab.com:jefdaj/quick-multi-paranoid-nix.git' quick-multi-paranoid-nix;
+  git -C quick-multi-paranoid-nix fetch --all --prune
 
 [myrepos/ortholang/sonicparanoid2-nix]
-checkout = git clone 'git@gitlab.com:jefdaj/sonicparanoid2-nix' 'sonicparanoid2-nix'
+checkout = \
+  git clone 'git@gitlab.com:jefdaj/sonicparanoid2' sonicparanoid2-nix;
+  git -C sonicparanoid2-nix remote add salvo981 'https://gitlab.com/salvo981/sonicparanoid2.git';
+  git -C sonicparanoid2-nix fetch --all --prune
+
+[myrepos/ortholang/fastme-nix]
+checkout = \
+  git clone 'git@gitlab.com:jefdaj/fastme-nix' fastme-nix;
+  git -C fastme-nix remote add atgc 'https://gite.lirmm.fr/atgc/FastME'
+  git -C fastme-nix fetch --all --prune
+
+[myrepos/ortholang/muscle-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/muscle-nix' muscle-nix;
+  git -C muscle-nix fetch --all --prune
+
+[myrepos/ortholang/ncbi-blast-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/ncbi-blast-nix' ncbi-blast-nix;
+  git -C ncbi-blast-nix fetch --all --prune
+
+[myrepos/ortholang/mcl-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/mcl-nix' mcl-nix;
+  git -C mcl-nix fetch --all --prune
+
+[myrepos/ortholang/inparanoid-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/inparanoid-nix' inparanoid-nix;
+  git -C inparanoid-nix fetch --all --prune
+
+[myrepos/ortholang/raxml-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/raxml-nix' raxml-nix;
+  git -C raxml-nix remote add stamatak 'https://github.com/stamatak/standard-RAxML';
+  git -C raxml-nix fetch --all --prune
 
 [myrepos/ortholang/orthofinder-nix]
-checkout = git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
-
-[myrepos/ortholang/ortholang]
-checkout = git clone 'git@github.com:jefdaj/ortholang' 'ortholang'
-
-[myrepos/ortholang/ortholang-demo]
-checkout = git clone 'git@github.com:jefdaj/ortholang-demo' 'ortholang-demo'
-
-[myrepos/ortholang/ortholang-userdata]
-checkout = git clone 'ssh://zilputer//mnt/data/users/jefdaj/myrepos/ortholang/ortholang-userdata' 'ortholang-userdata'
-sync = git pull origin && git push origin && git annex sync && git annex sync --content --jobs 8
-
-[myrepos/ortholang/ortholang_kernel]
-checkout = git clone 'git@github.com:jefdaj/ortholang_kernel' 'ortholang_kernel'
+checkout = \
+  git clone 'git@github.com:jefdaj/orthofinder-nix' 'orthofinder-nix'
+  git -C orthofinder-nix remote add davidemms 'https://github.com/davidemms/orthofinder';
+  git -C orthofinder-nix fetch --all --prune
 
 [myrepos/ortholang/treecl-nix]
-checkout = git clone 'git@github.com:jefdaj/treecl-nix' 'treecl-nix'
+checkout = \
+  git clone 'git@github.com:jefdaj/treecl-nix' treecl-nix;
+  git -C treecl-nix remote add kgori 'https://github.com/kgori/treeCl';
+  git -C treecl-nix fetch --all --prune
+
+[myrepos/ortholang/psiblast-exb-nix]
+checkout = \
+  git clone 'git@github.com:jefdaj/psiblast-exb-nix' psiblast-exb-nix;
+  git -C psiblast-exb-nix remote add kyungtaekLIM 'https://github.com/kyungtaekLIM/PSI-BLASTexB';
+  git -C psiblast-exb-nix fetch --all --prune
+
+[myrepos/ortholang/ortholang]
+checkout = \
+  git clone 'git@github.com:jefdaj/ortholang' ortholang;
+  git -C ortholang fetch --all --prune
+
+[myrepos/ortholang/ortholang-demo]
+checkout = \
+  git clone 'git@github.com:jefdaj/ortholang-demo' ortholang-demo;
+  git -C ortholang-demo fetch --all --prune
+
+[myrepos/ortholang/ortholang-userdata]
+checkout = \
+  git clone 'ssh://zilputer//mnt/data/users/jefdaj/myrepos/ortholang/ortholang-userdata' ortholang-userdata;
+  git -C ortholang-userdata remote rename origin zilputer;
+  git -C ortholang-userdata remote add origin 'git@bitbucket.org:jefdaj/ortholang-userdata';
+  git -C ortholang-userdata annex init $(hostname);
+  git -C ortholang-userdata config remote.origin.annex-ignore true;
+  git -C ortholang-userdata fetch --all --prune
+sync = \
+  git pull origin && git push origin \
+  && git annex sync && git annex sync --content --jobs 8
+
+[myrepos/ortholang/ortholang-jupyter]
+checkout = \
+  git clone 'git@github.com:jefdaj/ortholang-jupyter' ortholang-jupyter;
+  git -C ortholang-jupyter fetch --all --prune
 
 #########
 # knlab #
@@ -115,25 +221,37 @@ sync = git annex sync && git annex sync --content --jobs 8
 ##########
 
 [myrepos/github/docopt.hs]
-checkout = git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs'
+checkout = \
+  git clone 'git@github.com:jefdaj/docopt.hs' 'docopt.hs';
+  git -C filestore remote add docopt 'https://github.com/docopt/docopt.hs';
+  git -C filestore fetch --all --prune
 
 [myrepos/github/dotfiles]
 checkout = git clone 'git@github.com:jefdaj/dotfiles' 'dotfiles'
 
 [myrepos/github/filestore]
-checkout = git clone 'git@github.com:jefdaj/filestore' 'filestore'
+checkout = \
+  git clone 'git@github.com:jefdaj/filestore' filestore;
+  git -C filestore remote add jgm 'https://github.com/jgm/filestore';
+  git -C filestore fetch --all --prune
 
 [myrepos/github/gander]
 checkout = git clone 'git@github.com:jefdaj/gander' 'gander'
 
 [myrepos/github/gitit]
-checkout = git clone 'git@github.com:jefdaj/gitit' 'gitit'
+checkout = \
+  git clone 'git@github.com:jefdaj/gitit' gitit;
+  git -C gitit remote add jgm 'https://github.com/jgm/gitit';
+  git -C gitit fetch --all --prune
 
 [myrepos/github/horcrux]
 checkout = git clone 'git@github.com:jefdaj/horcrux' 'horcrux'
 
 [myrepos/github/nixpkgs]
-checkout = git clone 'git@github.com:jefdaj/nixpkgs' 'nixpkgs'
+checkout = \
+  git clone 'git@github.com:jefdaj/nixpkgs' nixpkgs
+  git -C nixpkgs remote add nixos 'https://github.com/nixos/nixpkgs';
+  git -C nixpkgs fetch --all --prune
 
 [myrepos/github/star-vote]
 checkout = git clone 'git@github.com:jefdaj/star-vote' 'star-vote'
