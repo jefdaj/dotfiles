@@ -16,7 +16,6 @@ autocmd BufNewFile,BufRead *.page set filetype=markdown.pandoc
 " ortholang scripts look ok with python highlighting
 autocmd BufNewFile,BufRead *.ol  set filetype=python
 autocmd BufNewFile,BufRead *.cut set filetype=python
-autocmd BufNewFile,BufRead *.ol  set filetype=python
 
 " gvim
 if has("gui_running")
