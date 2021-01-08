@@ -63,24 +63,24 @@ checkout = \
 [myrepos/ortholang/busco-nix]
 checkout = \
   git clone 'git@gitlab.com:jefdaj/busco' busco-nix
-  git -C busco-nix remote add ezlab 'https://gitlab.com/ezlab/busco.git';
+  git -C busco-nix remote add ezlab 'https://gitlab.com/ezlab/busco.git/';
   git -C busco-nix fetch --all --prune
 
 [myrepos/ortholang/quick-multi-paranoid-nix]
 checkout = \
-  git clone 'git@gitlab.com:jefdaj/quick-multi-paranoid-nix.git' quick-multi-paranoid-nix;
+  git clone 'git@gitlab.com:jefdaj/quick-multi-paranoid-nix' quick-multi-paranoid-nix;
   git -C quick-multi-paranoid-nix fetch --all --prune
 
 [myrepos/ortholang/sonicparanoid2-nix]
 checkout = \
   git clone 'git@gitlab.com:jefdaj/sonicparanoid2' sonicparanoid2-nix;
-  git -C sonicparanoid2-nix remote add salvo981 'https://gitlab.com/salvo981/sonicparanoid2.git';
+  git -C sonicparanoid2-nix remote add salvo981 'https://gitlab.com/salvo981/sonicparanoid2.git/';
   git -C sonicparanoid2-nix fetch --all --prune
 
 [myrepos/ortholang/fastme-nix]
 checkout = \
   git clone 'git@gitlab.com:jefdaj/fastme-nix' fastme-nix;
-  git -C fastme-nix remote add atgc 'https://gite.lirmm.fr/atgc/FastME'
+  git -C fastme-nix remote add atgc 'https://gite.lirmm.fr/atgc/FastME.git/'
   git -C fastme-nix fetch --all --prune
 
 [myrepos/ortholang/muscle-nix]
